@@ -15,6 +15,7 @@
 		63ACC6C92AAE3D8E00965310 /* iosUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63ACC6C82AAE3D8E00965310 /* iosUITestsLaunchTests.swift */; };
 		63ACC6D72AAE3DDB00965310 /* BreedListScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63ACC6D52AAE3DDB00965310 /* BreedListScreen.swift */; };
 		63ACC6D82AAE3DDB00965310 /* BreedViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63ACC6D62AAE3DDB00965310 /* BreedViewModel.swift */; };
+		C9AFAE502DD3F22300CF3CFF /* allshared in Frameworks */ = {isa = PBXBuildFile; productRef = C9AFAE4F2DD3F22300CF3CFF /* allshared */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +55,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C9AFAE502DD3F22300CF3CFF /* allshared in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -149,6 +151,7 @@
 			);
 			name = ios;
 			packageProductDependencies = (
+				C9AFAE4F2DD3F22300CF3CFF /* allshared */,
 			);
 			productName = ios;
 			productReference = 63ACC6A72AAE3D8D00965310 /* ios.app */;
@@ -223,6 +226,7 @@
 			);
 			mainGroup = 63ACC69E2AAE3D8D00965310;
 			packageReferences = (
+				C9AFAE4E2DD3F22300CF3CFF /* XCRemoteSwiftPackageReference "KMMBridge" */,
 			);
 			productRefGroup = 63ACC6A82AAE3D8D00965310 /* Products */;
 			projectDirPath = "";
@@ -624,6 +628,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		C9AFAE4E2DD3F22300CF3CFF /* XCRemoteSwiftPackageReference "KMMBridge" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/JanFicko/KMMBridge";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.1.3;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		C9AFAE4F2DD3F22300CF3CFF /* allshared */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C9AFAE4E2DD3F22300CF3CFF /* XCRemoteSwiftPackageReference "KMMBridge" */;
+			productName = allshared;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 63ACC69F2AAE3D8D00965310 /* Project object */;
 }
